@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Publish jar file...') {
             steps {
-               aws cloudformation create-stack --stack-name myteststack --template-url "file://template.yaml"
+               sh "aws cloudformation create-stack --stack-name myteststack --template-url 'file://template.yaml'"
             }
         }
         
