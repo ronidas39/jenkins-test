@@ -1,4 +1,4 @@
-pipeline {
+pipeline { 
     // run on any agent
     agent any
     // Set builds to trigger on a timer
